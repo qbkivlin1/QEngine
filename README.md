@@ -36,7 +36,7 @@
 * mvvm like vue
 
 ## platform
-* sdl 
+* sdl
 * sdl_image
 * sdl_mixer
 * sdl_net

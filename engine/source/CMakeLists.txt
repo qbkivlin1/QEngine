@@ -9,16 +9,15 @@ project(
 
 add_subdirectory(engine)
 
+set(QENGINE_PLATFORM_TO_BUILD "WINDOWS" CACHE STRING "Platform selected at CMake configure time")
+set_property(CACHE QENGINE_PLATFORM_TO_BUILD PROPERTY STRINGS WINDOWS ANDROID)
 
-set(PLATFORM_TO_BUILD "WINDOWS" CACHE STRING "Platform selected at CMake configure time")
-set_property(CACHE PLATFORM_TO_BUILD PROPERTY STRINGS WINDOWS ANDROID)
-
-if(${PLATFORM_TO_BUILD} MATCHES "WINDOWS")
-	add_subdirectory(launch/windows)
+if(${QENGINE_PLATFORM_TO_BUILD} MATCHES "WINDOWS")
 	add_subdirectory(third_party/glfw)
+	add_subdirectory(launch/windows)
 endif()
 
-if(${PLATFORM_TO_BUILD} MATCHES "ANDROID")
+if(${QENGINE_PLATFORM_TO_BUILD} MATCHES "ANDROID")
 	add_subdirectory(launch/android)
 endif()
 

@@ -15,6 +15,7 @@ set_property(CACHE PLATFORM_TO_BUILD PROPERTY STRINGS WINDOWS ANDROID)
 
 if(${PLATFORM_TO_BUILD} MATCHES "WINDOWS")
 	add_subdirectory(launch/windows)
+	add_subdirectory(third_party/glfw)
 endif()
 
 if(${PLATFORM_TO_BUILD} MATCHES "ANDROID")

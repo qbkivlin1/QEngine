@@ -1,3 +1,6 @@
 [submodule "engine/source/third_party/glfw"]
 	path = engine/source/third_party/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "engine/source/third_party/jemalloc-cmake"]
+	path = engine/source/third_party/jemalloc-cmake
+	url = https://github.com/jemalloc/jemalloc-cmake.git

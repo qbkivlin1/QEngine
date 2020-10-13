@@ -54,6 +54,3 @@ dkms.conf
 # Intermediate
 engine/intermediate/
 
-# Third Party
-engine/source/third_party/
-

@@ -4,3 +4,6 @@
 [submodule "engine/source/third_party/jemalloc-cmake"]
 	path = engine/source/third_party/jemalloc-cmake
 	url = https://github.com/jemalloc/jemalloc-cmake.git
+[submodule "engine/source/third_party/mimalloc"]
+	path = engine/source/third_party/mimalloc
+	url = https://github.com/microsoft/mimalloc.git

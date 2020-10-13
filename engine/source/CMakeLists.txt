@@ -10,6 +10,8 @@ project(
 
 add_subdirectory(engine)
 
+add_subdirectory(third_party/mimalloc)
+
 set(QENGINE_PLATFORM_TO_BUILD "WINDOWS" CACHE STRING "Platform selected at CMake configure time")
 set_property(CACHE QENGINE_PLATFORM_TO_BUILD PROPERTY STRINGS WINDOWS ANDROID)
 

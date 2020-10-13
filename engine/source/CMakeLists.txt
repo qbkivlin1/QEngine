@@ -7,6 +7,7 @@ project(
 	LANGUAGES C
 )
 
+
 add_subdirectory(engine)
 
 set(QENGINE_PLATFORM_TO_BUILD "WINDOWS" CACHE STRING "Platform selected at CMake configure time")

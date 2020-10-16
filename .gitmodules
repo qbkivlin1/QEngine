@@ -1,6 +1,0 @@
-[submodule "engine/source/third_party/glfw"]
-	path = engine/source/third_party/glfw
-	url = https://github.com/glfw/glfw.git
-[submodule "engine/source/third_party/tinycthread"]
-	path = engine/source/third_party/tinycthread
-	url = https://github.com/tinycthread/tinycthread.git

@@ -10,8 +10,10 @@ project(
 
 add_subdirectory(engine)
 add_subdirectory(core/thread_pool)
+add_subdirectory(core/type_def)
 
 add_subdirectory(third_party/tinycthread)
+
 
 set(QENGINE_PLATFORM_TO_BUILD "WINDOWS" CACHE STRING "Platform selected at CMake configure time")
 set_property(CACHE QENGINE_PLATFORM_TO_BUILD PROPERTY STRINGS WINDOWS ANDROID)

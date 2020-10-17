@@ -11,6 +11,7 @@ project(
 add_subdirectory(engine)
 add_subdirectory(core/thread_pool)
 add_subdirectory(core/type_def)
+add_subdirectory(core/hash)
 
 add_subdirectory(third_party/tinycthread)
 

@@ -13,6 +13,13 @@ target_link_libraries(launch PUBLIC Vulkan::Vulkan)
 
 target_link_libraries(launch PUBLIC glfw)
 
+set_target_properties( launch
+  PROPERTIES
+  ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
+  LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
+  RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
+)
+
 
 
 

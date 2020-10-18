@@ -7,14 +7,16 @@ project(
 	LANGUAGES C
 )
 
-add_subdirectory(engine)
-add_subdirectory(core/thread_pool)
-add_subdirectory(core/type_def)
-add_subdirectory(core/hash)
+add_subdirectory(runtime/engine)
+add_subdirectory(runtime/core/thread_pool)
+add_subdirectory(runtime/core/type_def)
+add_subdirectory(runtime/core/hash)
 
 add_subdirectory(third_party/tinycthread)
 
-add_subdirectory(tool/qht)
+add_subdirectory(develop/qht)
+
+add_subdirectory(config)
 
 
 set(QENGINE_PLATFORM_TO_BUILD "WINDOWS" CACHE STRING "Platform selected at CMake configure time")
@@ -22,11 +24,11 @@ set_property(CACHE QENGINE_PLATFORM_TO_BUILD PROPERTY STRINGS WINDOWS ANDROID)
 
 if(${QENGINE_PLATFORM_TO_BUILD} MATCHES "WINDOWS")
 	add_subdirectory(third_party/glfw)
-	add_subdirectory(launch/windows)
+	add_subdirectory(runtime/launch/windows)
 endif()
 
 if(${QENGINE_PLATFORM_TO_BUILD} MATCHES "ANDROID")
-	add_subdirectory(launch/android)
+	add_subdirectory(runtime/launch/android)
 endif()
 
 

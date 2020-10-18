@@ -34,3 +34,10 @@ if(TINYCTHREAD_INSTALL)
     install(FILES source/tinycthread.h DESTINATION include)
   endif()
 endif(TINYCTHREAD_INSTALL)
+
+set_target_properties( tinycthread
+  PROPERTIES
+  ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
+  LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
+  RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
+)

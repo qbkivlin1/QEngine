@@ -11,5 +11,3 @@ set_target_properties( qht
   LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
   RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
 )
-
-add_dependencies(qht config)

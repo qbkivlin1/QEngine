@@ -7,10 +7,13 @@ target_include_directories(engine PUBLIC public)
 
 target_link_libraries(engine PUBLIC thread_pool)
 
+add_dependencies(engine config)
+
 set_target_properties( engine
   PROPERTIES
   ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
   LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
   RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/binary"
 )
+
 

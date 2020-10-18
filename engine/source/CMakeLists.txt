@@ -31,6 +31,8 @@ if(${QENGINE_PLATFORM_TO_BUILD} MATCHES "ANDROID")
 	add_subdirectory(runtime/launch/android)
 endif()
 
+set(CMAKE_SOURCE_DIR, ${CMAKE_SOURCE_DIR})
+configure_file(develop/qht/public/cmake_config.h.in ${CMAKE_SOURCE_DIR}/develop/qht/public/cmake_config.h)
 
 
 

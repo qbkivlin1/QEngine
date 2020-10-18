@@ -7,13 +7,14 @@ project(
 	LANGUAGES C
 )
 
-
 add_subdirectory(engine)
 add_subdirectory(core/thread_pool)
 add_subdirectory(core/type_def)
 add_subdirectory(core/hash)
 
 add_subdirectory(third_party/tinycthread)
+
+add_subdirectory(tool/qht)
 
 
 set(QENGINE_PLATFORM_TO_BUILD "WINDOWS" CACHE STRING "Platform selected at CMake configure time")
